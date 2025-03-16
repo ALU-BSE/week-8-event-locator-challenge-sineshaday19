@@ -1,0 +1,151 @@
+/* General Styles */
+:root {
+    --primary-color: #ff4d91;
+    --secondary-color: #333;
+    --light-bg: #f8f9fa;
+    --border-radius: 8px;
+}
+
+/* Pink Text */
+.pink-text {
+    color: var(--primary-color);
+}
+
+/* Black Text */
+.black-text {
+    color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--light-bg);
+    padding: 50px 0;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.hero-subtitle {
+    margin-bottom: 25px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Search Section */
+.search-section {
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group .form-control {
+    border: 1px solid #e0e0e0;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+
+/* Pink Search & Clear Buttons */
+.btn-search, .btn-clear {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-color);
+    transition: all 0.3s ease;
+}
+
+.btn-search:hover, .btn-clear:hover {
+    background-color: #d1307c;
+}
+
+/* Events List */
+.event-list {
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Event Cards */
+.event-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 20px;
+}
+
+.event-title {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.event-description {
+    color: #666;
+}
+
+/* Pink Join Button */
+.join-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.join-btn:hover {
+    background: #d1307c;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
