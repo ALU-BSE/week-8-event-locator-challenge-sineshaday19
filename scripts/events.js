@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             location: "Virtual Meeting",
             image: "tech-event.jpg" 
         },
+        
         {
             id: 2,
             title: "Tech Startup Networking Event",
